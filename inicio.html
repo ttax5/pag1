@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lixts</title>
+  <link rel="stylesheet" type="text/css" href="../css/style-inicio.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../img/carrito.png" type="image/x-icon">
+
+</head>
+
+
+<body>
+  <div class="container">
+  <div class="header">
+    <div>
+      <button class="button" id="Agregar-listas">Nueva Lista</button>
+    </div>
+    <h1>Lixts</h1>
+    <div>
+      <button class="button" id="ver-listas">Listas Anteriores</button>
+    </div>
+  </div>
+  <br>
+  <div class="sidebar-compras">
+    <div id="lista-compras">
+      <h2>Lista de Compras</h2>
+      <ul id="items-comprados"></ul>
+    </div>
+  </div>
+  <div class="menu-container">
+  <div class="menu">
+    <label for="categorias">Productos Destacados:</label><br><br>
+    <select id="categorias">
+      <option value="frutas">Frutas</option> 
+      <option value="lacteos">Lácteos</option>
+      <option value="fiambres">Fiambres</option>
+      <option value="snack">Snack</option>
+      <option value="enlatados">Enlatados</option>
+      <option value="carnes">Carnes</option>
+      <option value="limpieza">Limpieza</option>
+      <option value="panaderia">Panaderia</option>
+      <option value="bebidas">Bebidas</option>
+      <!-- Agrega más opciones de categorías aquí -->
+    </select>
+  </div>
+  <div id="productos"></div>
+  <button id="redireccionar" class="button">Agregar Nuevo Producto</button>
+</div>
+
+<div class="sidebar-anteriores">
+  <div id="listas-anteriores">
+    <h2>Listas Anteriores</h2>
+    <ul id="listas-guardadas"></ul>
+  </div>
+    <div id="whatsapp-button">
+      <img src="../img/whatsapp (2).png" alt="WhatsApp Logo">
+      <span>Compartir en WhatsApp</span>
+    </div>
+
+  </div>
+ <!-- Pop-up oculto inicialmente -->
+ <div id="popup-container" style="display: none;">
+  <div class="popup">
+    <span class="popup-close">X</span><br>
+    <h3>La lista anterior fue guardada con éxito</h3>
+  </div>
+</div>
+  <script src="../productos.js"></script>
+  <script src="../guardar-lista.js"></script>
+</div>
+</body>
+</html>

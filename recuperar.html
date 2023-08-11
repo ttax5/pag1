@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/style-recuperar.css">
+  <link rel="icon" href="../img/carrito.png" type="image/x-icon">
+
+  <title>Lixts</title>
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="form-container sign-in-container">
+      <form action="#">
+        <h1>Recuperar contraseña</h1>
+        <input type="text" id="dni" name="dni" pattern="[0-9]{1,10}" maxlength="10" required placeholder="DNI" />
+        <button id="checkDni">Verificar DNI</button>
+        <input type="text" id="nombre" name="nombre" class="hidden" placeholder="Nombre" />
+        <input type="text" id="apellido" name="apellido" class="hidden" placeholder="Apellido" />
+        <input type="password" id="nuevaContraseña" class="hidden" placeholder="Nueva contraseña" />
+        <button id="cambiarContraseña" class="hidden">Cambiar contraseña</button>
+      </form>
+    
+    </div>
+  </div>
+  <script src="../recuperar.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <footer>
+  </footer>
+</body>
+</html>

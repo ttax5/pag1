@@ -1,0 +1,344 @@
+html {
+  background-color:  #EFECD3;
+  
+}
+
+body {
+
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para el título principal */
+h1 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  font-weight:bold;
+  color: #252525;
+}
+
+/* Estilo para los subtítulos */
+h2 {
+  font-family: inherit;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para la fuente elegante y minimalista */
+h2,
+h3 {
+  font-family: inherit;
+  font-weight: normal;
+}
+
+/* Estilo para el menú desplegable */
+.menu select {
+  width: 15%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  background-color: #fffdfd;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.menu select:focus {
+  outline: none;
+}
+
+.menu select option {
+  background-color: #bcd3d0;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Estilos adicionales para el menú desplegable */
+.menu label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333333;
+  font-size: 27px;
+}
+
+/* Estilo para la sección de botones */
+.header {
+  background-color: #bcd3d0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #ffffff;
+  font-style:italic;
+
+}
+
+/* Estilo para los productos */
+#productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  justify-items: center;
+  margin: 15px auto;
+  margin-left: auto;
+  max-width: 1100px;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+		0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.contador {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.contador input {
+  width: 100%;
+  text-align: center;
+  border: none;
+  background: none;
+  font-size: 14px;
+}
+
+.contador button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contador button:focus {
+  outline: none;
+}
+
+.contador button:hover {
+  background-color: #e8e8e8;
+}
+
+.contador button:active {
+  transform: scale(0.9);
+}
+
+.button-agregar {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  background-color:#A47C66;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Estilo para la lista de compras */
+#lista-compras {
+
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: flex-start; /* Cambia de "center" a "flex-start" */
+  text-align: center;
+}
+
+
+#lista-compras ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#lista-compras li {
+  margin-bottom: 5px;
+}
+
+#listas-anteriores {
+  margin-top: 20px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  clear: both;
+  text-align: center;
+}
+
+#listas-anteriores h2 {
+  margin-bottom: 10px;
+}
+
+#listas-anteriores ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#listas-anteriores li {
+  margin-bottom: 5px;
+}
+
+.sidebar-compras {
+  float: right;
+  width: 22%;
+  
+}
+.sidebar-anteriores {
+  float: left;
+  width: 22%;
+  
+}
+/* Estilo para los botones */
+.button {
+
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #A4B9AF;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #7d8d85;
+}
+
+/* Estilo para el pop-up */
+#popup-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #A4B9AF;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  display: none;
+  z-index: 9999;
+  border-radius: 5%;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Estilo para la imagen de WhatsApp */
+#whatsapp-button {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#whatsapp-button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* Estilo para el contenedor de la imagen de WhatsApp */
+#whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #54be4d;
+  color: #252525;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+#whatsapp-button img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+/* Estilo para el pop-up oculto inicialmente */
+#popup-container {
+  display: none;
+}
+
+/* Estilo para el contenedor de los productos */
+#productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  background-color: #DAB89D;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+#categorias {
+
+  font-size: 22px;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #A4B9AF;
+}
+
+#items-comprados {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header button {
+    margin-top: 10px;
+  }
+
+  .container {
+    align-items: center;
+  }
+
+  #productos {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 5px;
+    margin: 10px auto;
+    max-width: 400px;
+  }
+
+  .producto img {
+    width: 80px;
+    height: 80px;
+  }
+}
